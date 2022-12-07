@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book List</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!-- action="viewlist.html" -->
+  <form id="vl" action="index.html" method="post">
+    <div id="logIn">
+      <h1 class="admin-head">Admin logIn</h1>
+      <label>User Name :</label>
+      <input type="text" id="userName" name="un" value="" placeholder="User Name" required><br>
+      <label for="">Password :</label>
+      <input type="password" id="pass" name="pa" value="" placeholder="Password" required><br><br>
+      <button type="button" id="sub" class="btn" name="submit" onclick="checkuspas()">Log in</button>&nbsp;&nbsp;
+      <button type="button" id="viewBookList" class="btn" name="button" onclick="onlyView()">View</button>
+    </div>
+  </form>
+  <div id="onlyV">
+
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
